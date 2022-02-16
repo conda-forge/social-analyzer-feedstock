@@ -1,5 +1,5 @@
 {% set name = "social-analyzer" %}
-{% set version = "0.39" %}
+{% set version = "0.40" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/social-analyzer-{{ version }}.tar.gz
-  sha256: d0aefce8f527154d4eb53daf6bcd00aae8b46cc54a1ab2be0363f4aed85962cd
+  sha256: 61eefda0dbf9d19a8e08f87adeb2c2c4eb7c373579bc9fba47b055f2909e7917
 
 build:
   number: 0
@@ -26,6 +26,7 @@ requirements:
     - requests
     - termcolor
     - tld
+    - galeodes
 
 test:
   commands:
