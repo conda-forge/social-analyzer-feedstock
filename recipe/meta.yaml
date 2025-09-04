@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/social-analyzer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/social-analyzer-{{ version }}.tar.gz
   sha256: 1981e71d05d7c780f01697af586681d67b00308e0912f8a299a49fa1993636a3
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
